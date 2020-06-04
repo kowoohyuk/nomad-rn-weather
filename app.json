@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "nomad-rn-weather",
-    "slug": "nomad-rn-weather",
+    "name": "toy-01-rn-weather",
+    "slug": "toy-01-rn-weather",
     "platforms": [
       "ios",
       "android",
@@ -22,7 +22,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wooluck.toyweather"
+    },
+    "android": {
+      "package": "com.wooluck.toyweather"
+    },
+    "description": "토이프로젝트 01\n리액트 네이티브 (노마드 클론 코딩)"
   }
 }

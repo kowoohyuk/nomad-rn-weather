@@ -15,11 +15,12 @@ export default class extends React.Component {
     const { 
       data: { 
         main : { temp },
-        weather
+        weather,
       } 
     } = await axios.get(
       `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
     );
+
     this.setState({ isLoading: false, condition: weather[0].main, temp });
   };
   getLocation = async () => {
